@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name         Open thread in new link
+// @name         Seller Contact
 // @namespace    http://tampermonkey.net/
 // @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @description  Tiny improvements to the seller contact page
+// @author       Tuni-Soft
 // @match        https://addons.prestashop.com/*/seller-contact.php*
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jQuery-linkify/2.1.8/linkify.min.js
 // @require      https://cdnjs.cloudflare.com/ajax/libs/jQuery-linkify/2.1.8/linkify-jquery.min.js
@@ -39,8 +39,7 @@
     if (settings.url && settings.url.includes("action=getThread&")) {
       window.editor.focus();
       window.editor.setSelection(0, window.editor.getLength());
-      reverseMessages();
-      floatHeader();
+      stickyHeader();
       scrollToLastMessage();
       linkify();
     }
@@ -57,14 +56,7 @@
     }
   });
 
-  function reverseMessages() {
-    const messages = $('[rv-class="message.from"]');
-    messages.each(function(){
-      $(this).insertBefore('li.errors');
-    });
-  }
-
-  function floatHeader() {
+  function stickyHeader() {
     $('li.thread-details').css({
       position: "fixed",
       top: 55,
