@@ -10,7 +10,7 @@ This is a userscript aiming to add some improvements to the seller contact page 
 
 ### How to use
 - Install a custom script extension in your browser such as **Tampermonkey** or **Greasemonkey**
-- Copy the code from userscript.js and paste it in your new script
+- Copy the code from [userscript.js](https://github.com/unlocomqx/seller-contact/blob/master/userscript.js) and paste it in your new script
 
 ### Notes
 - This script includes linkify scripts from cdnjs.cloudflare.com which is a trustworthy source
