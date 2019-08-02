@@ -13,5 +13,5 @@ This is a userscript aiming to add some improvements to the seller contact page 
 - Copy the code from [userscript.js](https://github.com/unlocomqx/seller-contact/blob/master/userscript.js) and paste it in your new script
 
 ### Notes
-- This script includes linkify scripts from cdnjs.cloudflare.com which is a trustworthy source
+- This script includes linkify scripts from cdnjs.cloudflare.com which is a trustworthy source but you can remove them if you want to
 - Only install this script if you totally understand what the code does
