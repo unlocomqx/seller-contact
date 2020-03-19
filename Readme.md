@@ -7,6 +7,7 @@ This is a userscript aiming to add some improvements to the seller contact page 
 - Linkify links
 - Make the info header sticky so it's always visible
 - Follow thread link to improve compatibility with sticky notes extensions (which save info per address)
+- Display "Show all messages" by default instead of "See less messages"
 
 ### How to use
 - Install a custom script extension in your browser such as **Tampermonkey** or **Greasemonkey**

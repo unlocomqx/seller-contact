@@ -42,6 +42,7 @@
       stickyHeader();
       scrollToLastMessage();
       linkify();
+      displayShowAllMessages();
     }
 
   });
@@ -81,5 +82,11 @@
         linkClass: "blue",
       });
     }
+  }
+
+  function displayShowAllMessages() {
+    // see all should be displayed initially
+    $('#see_all_messages').show();
+    $('#see_less_messages').hide();
   }
 })();
